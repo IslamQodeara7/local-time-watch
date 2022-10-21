@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Local Time Watch</title>
+</head>
+<body>
+    
+<div class="watchDiv">
+    <div class="time">
+        <div class="secondsDiv circle">
+            <div class="secondsDot"></div>
+            <svg width="600" height="600" >
+                <circle stroke-dasharray = '950' class="secondsCircle" cx="300" cy="300" r="150" fill="transparent" stroke="pink" stroke-width="7"></circle>
+            </svg>
+        </div>
+        <div class="minutesDiv circle">
+            <div class="minutesDot"></div>
+            <svg width="500" height="500" >
+                <circle  stroke-dasharray = '792' class="minutesCircle" cx="250" cy="250" r="125" fill="transparent" stroke="yellow" stroke-width="7"></circle>
+            </svg>
+        </div>
+        <div class="hoursDiv circle">
+            <div class="hoursDot"></div>
+            <svg width="400" height="400" >
+                <circle  stroke-dasharray = '634' class="hoursCircle" cx="200" cy="200" r="100" fill="transparent" stroke="orange" stroke-width="7"></circle>
+            </svg>
+        </div>
+        <div class="circle">
+            <span class="hourSpan">00:</span><span class="minuteSpan">00:</span><span class="secondSpan">00</span>
+            <span style="position: absolute; top: -50%; left: 100%; color: white; font-size: 16px;" class="ampmspan">lol</span>
+            <span style="position: absolute; top: 100%;
+     color: white; font-size: 16px; text-align: center;" class="dayWithDate">
+    <div class="day"></div> 
+    <div class="date"></div> 
+    </span>
+            
+        </div>
+      </div>
+</div>
+    <script src="JS/index.js"></script>
+</body>
+</html>
